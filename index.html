@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Travel Site</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle"></div>
+        </header>
+        
+        <video src="images/mountfuji.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem et nostrum ducimus. 
+                Veniam totam ut rem quasi. Commodi, impedit doloribus veniam vel odit officiis dolor exercitationem in
+                velit quisquam?
+            </p>    
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="#"><img src="images/facebook.png" alt="" width="80" height="80"></a></li>
+            <li><a href="#"><img src="images/instagram.png" alt="" width="80" height="80"></a></li>
+            <li><a href="#"><img src="images/twitter.png" alt="" width="80" height="80"></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
